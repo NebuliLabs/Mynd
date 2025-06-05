@@ -1,134 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>loginX</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center; /* Changed to center */
-      padding: 20px;
-    }
-
-    section {
-      width: 45%;
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      text-align: center;
-      color: #333;
-    }
-
-    .background-image {
-      height: 200px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 8px;
-    }
-
-    #windows-bg {
-      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w+r////9JmYWBqJlpgAAAABJRU5ErkJggg=='); /* Replace with default */
-    }
-
-    .user-info {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .user-info img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #3e8e41;
-    }
-
-    /* Hidden file input and label */
-    .upload-btn-wrapper {
-      position: relative;
-      overflow: hidden;
-      display: inline-block;
-    }
-
-    .btn {
-      border: 2px solid gray;
-      color: gray;
-      background-color: white;
-      padding: 8px 20px;
-      border-radius: 8px;
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .upload-btn-wrapper input[type=file] {
-      font-size: 100px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: 0;
-    }
-
-    input[type=text] {
-      padding: 8px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-    }
-
-    .hidden {
-      display: none;
-    }
-  </style>
-  <script src="https://nebulilabs.github.io/loginX/script.js"></script> <!-- Link to external JavaScript file -->
+<title>Redirecting to Gmail...</title>
+<link rel="icon" href="https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png" type="image/png">
+<script>
+  window.onload = function() {
+    setTimeout(function() {
+      window.open("https://mail.google.com", "_blank");
+      window.close(); // Added closing the original tab back in
+    }, 1000); // 1000 milliseconds = 1 second
+  };
+</script>
 </head>
 <body>
 
-<div class="container">
-  <section id="windows">
-    <h2>loginX</h2>
-    <div class="background-image" id="windows-bg"></div>
-
-    <div class="upload-btn-wrapper">
-      <button class="btn">Upload Background</button>
-      <input type="file" name="windows-bg-file" id="windows-bg-file" accept="image/*">
-    </div>
-
-    <div class="user-info">
-      <label for="windows-username">Username:</label>
-      <input type="text" id="windows-username" placeholder="Enter username">
-
-      <div class="upload-btn-wrapper">
-        <button class="btn">Upload Profile Picture</button>
-        <input type="file" name="windows-pfp-file" id="windows-pfp-file" accept="image/*">
-      </div>
-
-      <img id="windows-profile-pic" src="#" alt="Profile Picture" class = "hidden">
-      <button onclick="launch('windows')">Launch</button>
-    </div>
-  </section>
-</div>
+<p>Redirecting to Gmail...</p>
 
 </body>
 </html>
